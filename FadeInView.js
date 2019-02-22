@@ -32,7 +32,6 @@ class FadeInView extends React.Component {
   }
 }
 
-// // You can then use your `FadeInView` in place of a `View` in your components:
 // export default class App extends React.Component {
 //   render() {
 //     return (
@@ -47,3 +46,8 @@ class FadeInView extends React.Component {
 
 // you can make a separate animation class and use it there as well
 // like we can use fadein class in the above way
+// you can make the class in that class only
+// we can then change the view to that class view
+
+
+

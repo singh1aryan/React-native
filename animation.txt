@@ -1,0 +1,27 @@
+some points for animations
+
+class fadin view (different class) 
+-component did mount
+    -animated.timing
+        -to value
+        -duration
+
+-render 
+-we need a state, let {fadeAnim} = this.state
+
+-return 
+    -Animated.View
+        -style 
+            -style, props, opacity, fade anim
+
+
+class App.js
+    -render, return
+        -View 
+            -animated view // FadeInView (this is the name of the class above)
+                -style - style, like height, weight and color
+                -text -  can give details
+
+
+
+                
