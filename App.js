@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Alert, sAnimated, Text, Button, 
+import { Alert, Animated, Text, Button, 
   StyleSheet, View, ActivityIndicator, AppRegistry } from 'react-native';
 // import React from 'react';
 // import { Animated, StyleSheet, Text, View } from 'react-native';
