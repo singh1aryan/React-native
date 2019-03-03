@@ -8,7 +8,7 @@ import {
 class HomeScreen extends Component{
     render(){
         return (
-            <View style = {StyleSheet.container}>
+            <View style = {styles.container}>
                 <Text>Home Screen</Text>
             </View>
         );
