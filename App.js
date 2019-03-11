@@ -6,7 +6,11 @@ import {StyleSheet, Text, View,Button} from 'react-native';
 import First from './screens/First';
 import Second from './screens/Second';
 import Drawer from './screens/Drawer';
-
+import CustomText from './screens/CustomText';
+import Form from './screens/Form';
+import Article from './screens/Article';
+import ListView from './screens/ListView';
+   
 // class First extends React.Component{
 //   render(){
 //     return(
@@ -37,7 +41,11 @@ import Drawer from './screens/Drawer';
   const AppStackNavigator = createStackNavigator({
     First:First,
     Second:Second,
-    Drawer:Drawer
+    Drawer:Drawer,
+    CustomText: CustomText,
+    Form: Form,
+    Article: Article,
+    ListView: ListView
   }, {
     defaultNavigationOptions:{
       headerStyle:{

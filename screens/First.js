@@ -5,7 +5,6 @@ import {StyleSheet, Text, View,Button} from 'react-native';
 // import {createStackNavigator, 
 //     createAppContainer} from 'react-navigation';
 
-import Second from '../screens/Second';
 
 class First extends React.Component{
     render(){
@@ -22,13 +21,21 @@ class First extends React.Component{
           </View>
           
           <View style = {{marginTop:20}}>
-            <Button title="Go to Notification screen" onPress={()=>this.props.navigation.navigate('Drawer')}/>
+            <Button title="Go to Custom Text " onPress={()=>this.props.navigation.navigate('CustomText')}/>
           </View>
           
           <View style = {{marginTop:20}}>
-            <Button title="Go to Drawer screen" onPress={()=>this.props.navigation.navigate('Drawer')}/>
+            <Button title="Go to Form Screen" onPress={()=>this.props.navigation.navigate('Form')}/>
+          </View>
+
+          <View style = {{marginTop:20}}>
+            <Button title="Go to Article Screen" onPress={()=>this.props.navigation.navigate('Article')}/>
           </View>
         
+          <View style = {{marginTop:20}}>
+            <Button title="List / Recycler View" onPress={()=>this.props.navigation.navigate('ListView')}/>
+          </View>
+
         </View>
       )
     }

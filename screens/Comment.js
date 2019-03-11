@@ -1,38 +1,40 @@
+
 import React, {Component} from "react";
 import {
     View,
     Text,
     StyleSheet,
-    Button
+    Button,
+    TextInput
 } from "react-native"
 
 class Comment extends Component{
-    render(){
+  
+  render(){
         return (
             <View>
             <View style = {styles.container}>
-                <Text>Commments aform</Text>
+                <Text>Commments form</Text>
             </View>
             <View>
                 <TextInput
-                    style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+                    style={{height: 60, borderColor: 'gray', borderWidth: 1,marginTop:60}}
+                    onChangeText={(text) => this.setState({text})}
                     value={'Name'}
                     text='Write your name here'
                 />
             </View>
             <View>
                 <TextInput
-                    style={{height: 40, borderColor: 'gray', borderWidth: 1}}
-                    value={'Student / other'}
-                    text='Who are you'
+                    style={{height: 200, borderColor: 'gray', borderWidth: 1,marginTop:40}}
+                    onChangeText={(text) => this.setState({text})}
+                    value={'Comment'}
                 />
             </View>
-            <View>
-                <TextInput
-                    style={{height: 40, borderColor: 'gray', borderWidth: 1}}
-                    value={'comment'}
-                />
+            <View style={{margin:30}}>
+            <Button title='Post Comment'/>
             </View>
+            
             </View>
         );
     }
