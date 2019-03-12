@@ -3,44 +3,41 @@ import React, {Component} from 'react'
 import {StyleSheet, Text,TextInput, View,Button} from 'react-native';
 
 class CustomText extends React.Component{
-    // render(){
-    //   return(
-    //     <View>
-          
-    //       <View>
-    //         <Button title='Hotkeys'></Button>
-    //       </View>
-          
-    //       <View style={{alignItems:'center'}}>
-    //       <TextInput
-    //                 style={{height: 40, borderColor: 'gray', borderWidth: 1, marginTop:10, paddingLeft:5}}
-    //                 value={'Interests...'}
-    //             />
-    //     </View>
-    //     </View>
-    //   )
-    // }
+  constructor(props) {
+    super(props);
+    this.onPress = this.onPress.bind(this);
+  }
     state = {
       textValue: 'Change me'
     }
 
    barriers = ['FENCE','TREE','CONSTRUCTION'];
-
-    Fence = () => {
-      this.setState({
-        textValue: 'There is a FENCE in front of ILC'
-      })
-    }
-    Tree = () => {
-      this.setState({
-        textValue: 'There is a TREE in front of ILC'
-      })
-    }
-    Constr = () => {
-      this.setState({
-        textValue: 'There is CONSTRUCTION going on in front of ILC'
-      })
-    }
+    
+   onPress(barrier, place) {
+    this.setState({
+      textValue: 'There is a ' + barrier + ' in front of ' + place
+    })
+  }
+    // Fence = () => {
+    //   this.setState({
+    //     textValue: 'There is a FENCE in front of ILC'
+    //   })
+    // }
+    // Tree = () => {
+    //   this.setState({
+    //     textValue: 'There is a TREE in front of ILC'
+    //   })
+    // }
+    // Constr = () => {
+    //   this.setState({
+    //     textValue: 'There is CONSTRUCTION going on in front of ILC'
+    //   })
+    // }
+    // People = () => {
+    //   this.setState({
+    //     textValue: 'There is a huge group of PEOPLE here'
+    //   })
+    // }
   
     render() {
       return (
@@ -49,34 +46,84 @@ class CustomText extends React.Component{
           {this.state.textValue}
           </TextInput>
           
-          <Text>Integrated Learning Center</Text>
-
+          <Text style={{textAlign:'center',marginTop:10}}>Integrative Learning Center</Text>
+  
         <View style={styles.container}>
           <View style={styles.buttonContainer}>
-            <Button title="Fence" onPress={this.Fence}/>
+            <Button title="Fence" onPress={() => this.onPress('FENCING','ILC')}/>
           </View>
           <View style={styles.buttonContainer}>
-            <Button title="Tree" onPress={this.Tree}/>
+            <Button title="Tree" onPress={() => this.onPress('TREE','ILC')}/>
           </View>
           <View style={styles.buttonContainer}>
-            <Button title="Constr." onPress={this.Constr}/>
+            <Button title="Constr." onPress={() => this.onPress('CONSTRUCTION','ILC')}/>
           </View>
         
         </View>
         
+        <Text style={{textAlign:'center',marginTop:10}}>Mullins Center</Text>
+
         <View style={styles.container}>
           
           <View style={styles.buttonContainer}>
-            <Button title="Fence" onPress={this.Fence}/>
+            <Button title="Fence" onPress={() => this.onPress('FENCING','MULLINS')}/>
           </View>
           <View style={styles.buttonContainer}>
-            <Button title="Tree" onPress={this.Tree}/>
+            <Button title="Tree" onPress={() => this.onPress('TREE','MULLINS')}/>
           </View>
           <View style={styles.buttonContainer}>
-            <Button title="Constr." onPress={this.Constr}/>
+            <Button title="Constr." onPress={() => this.onPress('CONSTRUCTION','MULLINS')}/>
           </View>
         
         </View>
+
+        <Text style={{textAlign:'center',marginTop:10}}>Physical Science Building</Text>
+
+        <View style={styles.container}>
+          
+          <View style={styles.buttonContainer}>
+            <Button title="Fence" onPress={() => this.onPress('FENCING','PSB')}/>
+          </View>
+          <View style={styles.buttonContainer}>
+            <Button title="Tree" onPress={() => this.onPress('TREE','PSB')}/>
+          </View>
+          <View style={styles.buttonContainer}>
+            <Button title="Constr." onPress={() => this.onPress('CONSTRUCTION','PSB')}/>
+          </View>
+        
+        </View>
+
+        <Text style={{textAlign:'center',marginTop:10}}>Computer Science</Text>
+
+        <View style={styles.container}>
+          
+          <View style={styles.buttonContainer}>
+            <Button title="Fence" onPress={() => this.onPress('FENCING','CS BUILDING')}/>
+          </View>
+          <View style={styles.buttonContainer}>
+            <Button title="Tree" onPress={() => this.onPress('TREE','CS BUILDING')}/>
+          </View>
+          <View style={styles.buttonContainer}>
+            <Button title="Constr." onPress={() => this.onPress('CONSTRUCTION','CS BUILDING')}/>
+          </View>
+        
+        </View>
+
+        {/* <Text style={{textAlign:'center',marginTop:10}}>Mullins Center</Text>
+
+        <View style={styles.container}>
+          
+          <View style={styles.buttonContainer}>
+            <Button title="Fence" onPress={() => this.onPress('FENCING','MULLINS')}/>
+          </View>
+          <View style={styles.buttonContainer}>
+            <Button title="Tree" onPress={() => this.onPress('TREE','MULLINS')}/>
+          </View>
+          <View style={styles.buttonContainer}>
+            <Button title="Constr." onPress={() => this.onPress('CONSTRUCTION','MULLINS')}/>
+          </View>
+        
+        </View> */}
         
 
 
