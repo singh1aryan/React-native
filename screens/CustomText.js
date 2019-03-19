@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 
 import {StyleSheet, Text,TextInput, View,Button} from 'react-native';
 
+
 class CustomText extends React.Component{
   constructor(props) {
     super(props);

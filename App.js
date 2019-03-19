@@ -10,33 +10,7 @@ import CustomText from './screens/CustomText';
 import Form from './screens/Form';
 import Article from './screens/Article';
 import ListView from './screens/ListView';
-   
-// class First extends React.Component{
-//   render(){
-//     return(
-//       <View>
-//         <Text>Open the app</Text>
-//         <Button title="Go to Second screen" onPress={()=>this.props.navigation.navigate('Second')}>
-//         </Button>
-//       </View>
-//     )
-//   }
-// }
-
-// class Second extends React.Component{
-//   static navigationOptions = {
-//     headerStyle: {
-//       backgroundColor: 'blue'
-//     }
-//   }
-//   render(){
-//     return(
-//       <View>
-//         <Text>Second screen</Text>
-//       </View>
-//     )
-//   }
-// }
+import MenuOptions from './screens/MenuOptions';
 
   const AppStackNavigator = createStackNavigator({
     First:First,
@@ -45,7 +19,8 @@ import ListView from './screens/ListView';
     CustomText: CustomText,
     Form: Form,
     Article: Article,
-    ListView: ListView
+    ListView: ListView,
+    MenuOptions: MenuOptions
   }, {
     defaultNavigationOptions:{
       headerStyle:{
@@ -58,4 +33,5 @@ import ListView from './screens/ListView';
 
   const App = createAppContainer(AppStackNavigator);
   export default App;
+  
 // export default createAppContainer(AppNavigator);

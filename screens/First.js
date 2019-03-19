@@ -36,6 +36,10 @@ class First extends React.Component{
             <Button title="List / Recycler View" onPress={()=>this.props.navigation.navigate('ListView')}/>
           </View>
 
+          <View style = {{marginTop:20}}>
+            <Button title="Menu Options" onPress={()=>this.props.navigation.navigate('MenuOptions')}/>
+          </View>
+
         </View>
       )
     }
