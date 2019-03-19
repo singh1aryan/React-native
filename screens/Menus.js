@@ -11,7 +11,7 @@ import {
 
 
 const myIcon = (<Icon name="rocket" size={30} color="#900" />)
-class MenuOptions extends React.Component{
+class Menus extends React.Component{
     
     render(){
       return(
@@ -32,4 +32,4 @@ class MenuOptions extends React.Component{
       )
     }
   }
-  export default MenuOptions;
+  export default Menus;

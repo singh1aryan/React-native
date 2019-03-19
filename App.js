@@ -10,7 +10,9 @@ import CustomText from './screens/CustomText';
 import Form from './screens/Form';
 import Article from './screens/Article';
 import ListView from './screens/ListView';
-import MenuOptions from './screens/MenuOptions';
+import Menus from './screens/Menus';
+import PopupMenu from './screens/PopupMenu';
+import Images from './screens/Images';
 
   const AppStackNavigator = createStackNavigator({
     First:First,
@@ -20,7 +22,9 @@ import MenuOptions from './screens/MenuOptions';
     Form: Form,
     Article: Article,
     ListView: ListView,
-    MenuOptions: MenuOptions
+    Menus: Menus,
+    PopupMenu: PopupMenu,
+    Images: Images,
   }, {
     defaultNavigationOptions:{
       headerStyle:{
@@ -30,8 +34,7 @@ import MenuOptions from './screens/MenuOptions';
   });
 
 
-
   const App = createAppContainer(AppStackNavigator);
   export default App;
-  
+
 // export default createAppContainer(AppNavigator);

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-import {StyleSheet, Text, View,Button} from 'react-native';
+import {StyleSheet, Text, ScrollView, View,Button} from 'react-native';
   
 // import {createStackNavigator, 
 //     createAppContainer} from 'react-navigation';
@@ -14,6 +14,7 @@ class First extends React.Component{
           <Text style={{fontSize:40}}>First screen</Text>
         </View>
 
+          {/* <ScrollView style={{marginBottom:10}}> */}
           <Button title="Go to Second screen" onPress={()=>this.props.navigation.navigate('Second')}/>
           
           <View style = {{marginTop:20}}>
@@ -36,10 +37,21 @@ class First extends React.Component{
             <Button title="List / Recycler View" onPress={()=>this.props.navigation.navigate('ListView')}/>
           </View>
 
-          <View style = {{marginTop:20}}>
+          {/* <View style = {{marginTop:20}}>
             <Button title="Menu Options" onPress={()=>this.props.navigation.navigate('MenuOptions')}/>
+          </View> */}
+
+          <View style = {{marginTop:20}}>
+            <Button title="Popup Menu" onPress={()=>this.props.navigation.navigate('PopupMenu')}/>
           </View>
 
+          <View style = {{marginTop:20}}>
+            <Button title="Images" onPress={()=>this.props.navigation.navigate('Images')}/>
+          </View>
+
+
+
+        {/* </ScrollView> */}
         </View>
       )
     }
