@@ -12,7 +12,7 @@ import Article from './screens/Article';
 import ListView from './screens/ListView';
 import Menus from './screens/Menus';
 import PopupMenu from './screens/PopupMenu';
-import Images from './screens/Images';
+// import Images from './screens/Images';
 
   const AppStackNavigator = createStackNavigator({
     First:First,

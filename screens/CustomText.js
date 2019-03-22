@@ -19,26 +19,6 @@ class CustomText extends React.Component{
       textValue: 'There is a ' + barrier + ' in front of ' + place
     })
   }
-    // Fence = () => {
-    //   this.setState({
-    //     textValue: 'There is a FENCE in front of ILC'
-    //   })
-    // }
-    // Tree = () => {
-    //   this.setState({
-    //     textValue: 'There is a TREE in front of ILC'
-    //   })
-    // }
-    // Constr = () => {
-    //   this.setState({
-    //     textValue: 'There is CONSTRUCTION going on in front of ILC'
-    //   })
-    // }
-    // People = () => {
-    //   this.setState({
-    //     textValue: 'There is a huge group of PEOPLE here'
-    //   })
-    // }
   
     render() {
       return (
