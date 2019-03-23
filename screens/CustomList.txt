@@ -1,0 +1,51 @@
+We need 3 things for a custom list in react native
+
+we do not need adapters, views, class or so many things like android
+
+1. We make a custom row first, which is how every item loooks like
+2. Then we make the custom List view which contains the items
+3. Then we use this wherever we want to, in components/classes/any other place
+
+<CustomListview
+        itemList={this.getData()}
+/>
+
+<CustomRow
+        title={item.title}
+        description={item.description}
+/>
+
+CustomRow = ({ title, description, image_url }) => (
+    <View style={styles.container}>
+        {/* <Image source={{ uri: image_url }} style={styles.photo} /> */}
+        {/* Star image to show that it is a favorite */}
+        {/* <AccessibleButton style = {styles.button}/> */}
+        <Image source={{uri: 'http://clipart-library.com/images/6cy5GXj9i.jpg'}}
+               style = {styles.starImage}/>
+        <View style={styles.container_text}>
+            <Text style={styles.title}>
+                {title}
+            </Text>
+            <Text style={styles.description}>
+                {description}
+            </Text>
+        </View>
+        {/* button to delete, accessible button */}
+        <TouchableHighlight onPress={this.onPress}>
+            <Image 
+                source={{uri:'https://previews.123rf.com/images/arhimicrostok/arhimicrostok1706/arhimicrostok170600362/79549735-trash-can-icon-delete-move-to-trash-clear-the-disk-space-vector-illustration-.jpg'}}
+                style = {styles.deleteButton}/>
+            {/* <AccessibleButton> 
+                <Image 
+                source={{uri:'https://previews.123rf.com/images/arhimicrostok/arhimicrostok1706/arhimicrostok170600362/79549735-trash-can-icon-delete-move-to-trash-clear-the-disk-space-vector-illustration-.jpg'}}
+                style = {styles.deleteButton}/>
+            </AccessibleButton> */}
+        </TouchableHighlight>
+
+    </View>
+);
+
+
+1. we pass what we want to list view
+2. custom list view passes stuff for row
+3. custom row has the stuff we want, custom layouts and everything 
