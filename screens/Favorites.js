@@ -73,7 +73,13 @@ class FavoritesScreen extends Component {
           deleteLocationAction={this.deleteLocation.bind(this)}
           navigateLocationAction={this.navigateLocation}
         />
-         
+         <View style={styles.buttonContainer}>
+          <AccessibleButton
+            onPress={this.addLocation}
+            titleText="Add Favorites"
+            titleColor="black"
+          />
+        </View>
       </View>
     );
   }
@@ -83,6 +89,9 @@ const styles = StyleSheet.create({
   ScrollViewContainer: {
     flex: 1,
     height: 200,
+  },
+  buttonContainer: {
+    margin:10,
   },
 });
 
