@@ -6,6 +6,7 @@
 Simple Layouts <br>
 Dynamic Allocation and Text Change <br>
 Buttons, Menu, Menu options <br>
+Custom flat lists <br>
 
 ## Intermediate Functions
 Redux Database <br>
