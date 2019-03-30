@@ -44,9 +44,9 @@ class First extends React.Component{
           <View style = {{marginTop:20}}>
             <Button title="Popup Menu" onPress={()=>this.props.navigation.navigate('PopupMenu')}/>
           </View>
-
+  
           <View style = {{marginTop:20}}>
-            <Button title="Custom Recycler View" onPress={()=>this.props.navigation.navigate('Images')}/>
+            <Button title="Custom Recycler View" onPress={()=>this.props.navigation.navigate('ModalExample')}/>
           </View>
 
 

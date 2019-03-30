@@ -12,6 +12,7 @@ import Article from './screens/Article';
 import ListView from './screens/ListView';
 import Menus from './screens/Menus';
 import PopupMenu from './screens/PopupMenu';
+import ModalExample from './screens/ModalExample';
 // import Images from './screens/Images';
 
   const AppStackNavigator = createStackNavigator({
@@ -24,7 +25,7 @@ import PopupMenu from './screens/PopupMenu';
     ListView: ListView,
     Menus: Menus,
     PopupMenu: PopupMenu,
-    Images: Images,
+    ModalExample:ModalExample,
   }, {
     defaultNavigationOptions:{
       headerStyle:{
